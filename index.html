@@ -48,9 +48,12 @@
 			//console.log(name, phone, email, message);
 
 			Email.send({
-        SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
-				To: 'optimalweb09@gmail.com',
-				From: "demooptimalweb@gmail.com",
+				Host : "smtp.gmail.com",
+				Username : "siwachashwani0103@gmail.com",
+				Password : "siwach$132003",
+        
+				To: 'siwachashwani0103@gmail.com',
+				From: "ashwanisiwach132003@gmail.com",
 				Subject: "New message on contact from "+name,
 				Body: Body
 			}).then(

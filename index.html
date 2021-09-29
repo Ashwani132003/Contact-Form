@@ -11,13 +11,14 @@
 
 <body>
     <div class="instruction">
+        <form action="contact.php" method="post">
         <div id="contact">Contact us</div>
-        <div id="name"><input type="text" placeholder="Name"></div>
-        <input id="email" type="email" placeholder="Your Email">
-        <input type="text" id="text" placeholder="Subject">
-        <textarea id="message" placeholder="Your message" rows="4" cols="22"></textarea>
+        <input name="name" id="name" type="text" placeholder="Name">
+        <input name="email" id="email" type="email" placeholder="Your Email">
+        <input name="subject" type="text" id="text" placeholder="Subject">
+        <textarea name="message" id="message" placeholder="Your message" rows="4" cols="22"></textarea>
         <button id="send">Send</button>
-
+        </form>
     </div>
 
 </body>

@@ -11,7 +11,7 @@
 
 <body>
     <div class="instruction">
-        <form action="javascript:sendmail()" method="post">
+        <form action="https://server.meowform.xyz/page/siwachashwani132003@gmail.com&contactme" method="post">
         <div id="contact">Contact us</div>
         <input name="name" id="name" type="text" placeholder="Name">
         <input name="email" id="email" type="email" placeholder="Your Email">
@@ -21,71 +21,12 @@
         <p style="font-size:25px;font-family:ariel;color:black;" id="a"></p>
         </form>
     </div>
-    
-    
-   
-    
+        
     <script
   src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
-    
-    
-    
-    
-    
-<script>  
-
-    function a(){
-
-                        document.getElementById("a").innerHTML = "Form has been submitted";
-
-    }
-    
-    function sendmail(){
-
-			var name = $('#name').val();
-			var email = $('#email').val();
-			var subject = $('#subject').val();
-                        var message = $('#message').val();
-
-			// var body = $('#body').val();
-
-			var Body='Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+'<br>Message: '+message;
-			//console.log(name, phone, email, message);
-
-			Email.send({
-				Host : "smtp.gmail.com",
-				Username : "siwachashwani0103@gmail.com",
-				Password : "password",
-        
-				To: 'siwachashwani0103@gmail.com',
-				From: "ashwanisiwach132003@gmail.com",
-				Subject: "New message on contact from "+name,
-				Body: Body
-			}).then(
-				message =>{
-					//console.log (message);
-					if(message=='OK'){
-					alert('Your mail has been send. Thank you for connecting.');
-					}
-					else{
-						console.error (message);
-						alert('There is error at sending message. ')
-						
-					}
-
-				}
-			);
-
-
-
-		}
-
-
-    </script>
- 
 
 </body>
 
